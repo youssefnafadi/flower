@@ -1,0 +1,20 @@
+.load-more-btn {
+    padding: 10px 20px;
+    background-color: #d63384;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #c2185b;
+  }
+  
+  .load-more-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

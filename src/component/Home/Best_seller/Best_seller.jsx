@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./Best_seller.css"
-
+import '../../../App.css'
 function BestSellerProducts() {
   const [count, setCount] = useState(0);
   const [products, setProducts] = useState([]);
@@ -21,7 +21,6 @@ function BestSellerProducts() {
 
   return (
     <>
-      <h2>Best Seller Products</h2>
       <div className="products-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
@@ -43,10 +42,6 @@ function BestSellerProducts() {
           </div>
         ))}
       </div>
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
